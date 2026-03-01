@@ -43,7 +43,7 @@ jobs:
         run: npm test --if-present
 
       - name: Upload API artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: api-build
           path: packages/webapi/
@@ -75,7 +75,7 @@ jobs:
         run: npm test --if-present
 
       - name: Upload MCP artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: mcp-build
           path: packages/mcp-server/
@@ -109,7 +109,7 @@ jobs:
           VITE_API_URL: ${{ secrets.API_URL || 'http://localhost:3000' }}
 
       - name: Upload frontend artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: frontend-build
           path: packages/webapp/dist/
