@@ -158,7 +158,7 @@ jobs:
 
       - name: Deploy to Azure Web App
         id: deploy
-        uses: azure/webapps-deploy@v2
+        uses: azure/webapps-deploy@v3
         with:
           app-name: ${{ env.AZURE_WEBAPP_API }}
           publish-profile: ${{ secrets.AZURE_WEBAPP_API_PUBLISH_PROFILE }}
@@ -183,7 +183,7 @@ jobs:
 
       - name: Deploy to Azure Web App
         id: deploy
-        uses: azure/webapps-deploy@v2
+        uses: azure/webapps-deploy@v3
         with:
           app-name: ${{ env.AZURE_WEBAPP_MCP }}
           publish-profile: ${{ secrets.AZURE_WEBAPP_MCP_PUBLISH_PROFILE }}
