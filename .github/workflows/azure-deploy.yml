@@ -151,7 +151,7 @@ jobs:
     
     steps:
       - name: Download API artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: api-build
           path: ./api
@@ -176,7 +176,7 @@ jobs:
     
     steps:
       - name: Download MCP artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: mcp-build
           path: ./mcp
@@ -201,7 +201,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download frontend artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: frontend-build
           path: ./dist
